@@ -29,13 +29,13 @@ public class PostMethodQuiz10 extends HttpServlet{
 		String userId = request.getParameter("userId");
 		String userPassword = request.getParameter("password");
 		
-//		if(userMap.get("id") != userId) {
-//			out.print("아이디가 일치하지 않습니다");
-//		} else if (userMap.get("id") == userId && userMap.get("password") != userPassword) {
-//			out.print("비밀번호가 일치하지 않습니다");
-//		}
-//		else {
+		if(userMap.get("id") != userId) {
+			out.print("아이디가 일치하지 않습니다");
+		} else if (userMap.get("id") == userId && userMap.get("password") != userPassword) {
+			out.print("비밀번호가 일치하지 않습니다");
+		}
+		else {
 			out.print(userMap.get("name") + "님 환영합니다!");
-//		}
+		}
 	}
 }
