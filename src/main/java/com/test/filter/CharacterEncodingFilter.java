@@ -12,6 +12,7 @@ import javax.servlet.annotation.WebFilter;
 @WebFilter("/*")
 public class CharacterEncodingFilter implements Filter {
 
+	// test 용 주석 추가
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
