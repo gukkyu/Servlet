@@ -18,7 +18,7 @@
 			String [] calculateArr = calculate.split("[+\\-*/]");
 			String mention = "";
 			double result = 0;
-			
+	
 			if (calculateArr.length > 2){
 		%>
 			<div class = "display-3">계산기의 성능이 구려서</div>
@@ -38,11 +38,13 @@
 					mention = calculateArr[0] + " / " + calculateArr[1] + " = ";
 					result = Double.valueOf(calculateArr[0]) / Double.valueOf(calculateArr[1]);
 				}
-			
-			
+			String resultStr = Double.toString(result);
+			if(resultStr.contains(".0")){
+				resultStr.substring(0 , resultStr.length() - 2);
+			}
 		%>
 		<h1>계산 결과</h1>
-		<div class = "display-3"><%= mention %> <span class = "text-primary"><%= result %></span></div>
+		<div class = "display-3"><%= mention %> <span class = "text-primary"><%= resultStr %></span></div>
 		<%
 			}
 		%>
