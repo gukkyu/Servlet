@@ -96,10 +96,8 @@ footer {height: 60px;}
 					</tr>
 					<%
 						}
-						if(list.get(i).get("category").equals(category) == false){
-							continue;
-						} else{
-					
+						if(list.get(i).get("category").equals(category)){
+							
 					%>
 					<tr>
 						<td class = "text-center"><%= list.get(i).get("ch") %></td>
