@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>SK Broadband IPTV</title>
 
 <style>
 .menu {height: 40px; text-align: center;}
@@ -96,7 +96,7 @@ footer {height: 60px;}
 					</tr>
 					<%
 						}
-						if(list.get(i).get("category").equals(category)){
+						else if(list.get(i).get("category").equals(category)){
 							
 					%>
 					<tr>
