@@ -39,8 +39,9 @@
 					result = Double.valueOf(calculateArr[0]) / Double.valueOf(calculateArr[1]);
 				}
 			String resultStr = Double.toString(result);
-			if(resultStr.contains(".0")){
-				resultStr.substring(0 , resultStr.length() - 2);
+			if(resultStr.endsWith("\\.0")){
+				int resultInt = (int)result;
+				resultStr = Integer.toString(resultInt);
 			}
 		%>
 		<h1>계산 결과</h1>
