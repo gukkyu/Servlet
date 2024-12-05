@@ -160,6 +160,13 @@
 			<span>가사 정보 없음</span>
 		</section>
 		<%
+	    	} else {
+	    		if(i == musicList.size() - 1){
+	    		
+		%>
+			<div class = "display-2 my-5">페이지를 찾을 수 없습니다.</div>
+		<%
+	    		}
 	    	}
 	    }
 		%>
