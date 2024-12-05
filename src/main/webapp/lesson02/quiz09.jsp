@@ -87,7 +87,7 @@ footer {height: 60px;}
 					
 					<% 
 					for(int i = 0; i < list.size(); i++){
-						if(category == null){
+						if(category == null || list.get(i).get("category").equals(category)){
 					%>
 					<tr>
 						<td class = "text-center"><%= list.get(i).get("ch") %></td>
@@ -95,17 +95,6 @@ footer {height: 60px;}
 						<td class = "text-center"><%= list.get(i).get("category") %></td>
 					</tr>
 					<%
-						}
-						else if(list.get(i).get("category").equals(category)){
-							
-					%>
-					<tr>
-						<td class = "text-center"><%= list.get(i).get("ch") %></td>
-						<td class = "text-center"><%= list.get(i).get("name") %></td>
-						<td class = "text-center"><%= list.get(i).get("category") %></td>
-					</tr>
-						<%
-						
 						}
 					}
 						%>
