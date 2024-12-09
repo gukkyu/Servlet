@@ -63,7 +63,7 @@ footer{height: 80px;}
 				</div>
 				<textarea class = "w-100" rows = "12" name = "description"></textarea>
 				<div class="input-group w-100 px-0 my-4">
-					<div class="input-group-append">
+					<div class="input-group-prepend">
     					<span class="input-group-text">이미지 url</span>
   					</div>
   					<input type="text" class="form-control" name = "url">
